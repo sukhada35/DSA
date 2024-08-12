@@ -2,16 +2,20 @@
 #include <iostream>
 using namespace std;
 // Function to print all elements of the array
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
+void printArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++) 
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
 }
 // Function to insert a value at a specific position in the array
-void insertAt(int arr[], int &size, int position, int value) {
+void insertAt(int arr[], int &size, int position, int value) 
+{
     // Shift elements to the right to make space for the new value
-    for (int i = size; i > position; i--) {
+    for (int i = size; i > position; i--) 
+    {
         arr[i] = arr[i-1];
     }
     // Insert the new value
@@ -20,15 +24,18 @@ void insertAt(int arr[], int &size, int position, int value) {
     size++;
 }
 // Function to delete an element from a specific position in the array
-void deleteAt(int arr[], int &size, int position) {
+void deleteAt(int arr[], int &size, int position) 
+{
     // Shift elements to the left to fill the gap created by the deleted value
-    for (int i = position; i < size - 1; i++) {
+    for (int i = position; i < size - 1; i++) 
+    {
         arr[i] = arr[i+1];
     }
     // Decrease the size of the array
     size--;
 }
-int main() {
+int main() 
+{
     int arr[100]; // Assuming a maximum size of 100 for simplicity
     int size, choice, value, position;
     // Read the number of grades from the user
@@ -36,14 +43,16 @@ int main() {
     cin >> size;
     // Read the grades from the user
     cout << "Enter the grades: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++) 
+    {
         cin >> arr[i];
     }
     // Print the current grades
     cout << "Current grades: ";
     printArray(arr, size);
     // Menu-driven interface for user interaction
-    while (true) {
+    while (true) 
+    {
         cout << "Menu:\n";
         cout << "1. Insert at first position\n";
         cout << "2. Insert at last position\n";
@@ -54,7 +63,8 @@ int main() {
         cout << "7. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-        switch (choice) {
+        switch (choice) 
+        {
             case 1:
                 // Insert a value at the first position
                 cout << "Enter value to insert at first position: ";
@@ -73,25 +83,34 @@ int main() {
                 cin >> position;
                 cout << "Enter value to insert: ";
                 cin >> value;
-                if (position >= 0 && position <= size) {
+                if (position >= 0 && position <= size) 
+                {
                     insertAt(arr, size, position, value);
-                } else {
+                } 
+                else 
+                {
                     cout << "Invalid position!" << endl;
                 }
                 break;
             case 4:
                 // Delete a value from the first position
-                if (size > 0) {
+                if (size > 0) 
+                {
                     deleteAt(arr, size, 0);
-                } else {
+                } 
+                else 
+                {
                     cout << "Array is empty!" << endl;
                 }
                 break;
             case 5:
                 // Delete a value from the last position
-                if (size > 0) {
+                if (size > 0) 
+                {
                     deleteAt(arr, size, size - 1);
-                } else {
+                } 
+                else 
+                {
                     cout << "Array is empty!" << endl;
                 }
                 break;
@@ -99,9 +118,12 @@ int main() {
                 // Delete a value from a specific position
                 cout << "Enter position to delete (0-based index): ";
                 cin >> position;
-                if (position >= 0 && position < size) {
+                if (position >= 0 && position < size) 
+                {
                     deleteAt(arr, size, position);
-                } else {
+                } 
+                else 
+                {
                     cout << "Invalid position!" << endl;
                 }
                 break;
