@@ -39,7 +39,7 @@ public:
         }
         else
         {
-            cout<<"Element"<<stack[top--]<<"Is popped."<<endl;
+            cout<<"Element "<<stack[top--]<<" is popped."<<endl;
         }
     }
     int peek()
@@ -97,8 +97,11 @@ int main()
                  MyStack.pop();
                  break;
             case 3:
-                 MyStack.peek();
-                 break;
+                element = MyStack.peek();
+                if (element != -1) {
+                    cout << "Top element is: " << element << endl;
+                }
+                break;
             case 4:
                  MyStack.display();
                  break;
