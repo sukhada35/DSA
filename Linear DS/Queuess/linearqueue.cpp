@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class LinearQueue 
+class LinearQueue
 {
 private:
     int front, rear, capacity;
