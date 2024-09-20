@@ -23,19 +23,19 @@ public:
     {
         if(isFull())
         {
-            cout<<"Stack overflow. Can't push";
+            cout<<"Stack overflow. Can't push"<<endl;
         }
         else
         {
             stack[++top] = element;
-            cout<<"Pushed Element"<<element<<endl;
+            cout<<"Pushed Element: "<<element<<endl;
         }
     }
     void pop()
     {
         if(isEmpty())
         {
-            cout<<"Stack underflow. Can't pop";
+            cout<<"Stack underflow. Can't pop"<<endl;
         }
         else
         {
@@ -98,7 +98,8 @@ int main()
                  break;
             case 3:
                 element = MyStack.peek();
-                if (element != -1) {
+                if (element != -1) 
+                {
                     cout << "Top element is: " << element << endl;
                 }
                 break;
@@ -109,7 +110,7 @@ int main()
                  cout<<"GOODBYEEE";
                  break;
             default:
-                cout<<"Invalid input";
+                cout<<"Invalid input"<<endl;
         }
     } while (choice != 5);
  
