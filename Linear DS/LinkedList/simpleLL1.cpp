@@ -1,4 +1,4 @@
-//Create a simple linked list structure and write code to display its elements.
+//Question: Create a simple linked list structure and write code to display its elements.
 #include <iostream>
 using namespace std;
 class Node{
