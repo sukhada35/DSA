@@ -13,4 +13,4 @@ The repository is organized into several folders based on different data structu
 - Additional folders will be added as I progress through various topics.
 .
 ## Contact
-If you have any questions or suggestions, feel free to reach out to me through GitHub.
+If you have any questions or suggestions, feel free to reach out to me through gitHub.
