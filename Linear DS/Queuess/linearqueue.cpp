@@ -5,7 +5,7 @@ class LinearQueue
 {
 private:
     int front, rear, capacity;
-    int *queue;
+    int *queue; 
 
 public:
     LinearQueue(int size) 

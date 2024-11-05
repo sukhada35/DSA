@@ -14,7 +14,7 @@ void printArray(int arr[], int size)
 void insertAt(int arr[], int &size, int position, int value) 
 {
     // Shift elements to the right to make space for the new value
-    for (int i = size; i > position; i--) 
+    for (int i = size; i > position; i--) //5
     {
         arr[i] = arr[i-1];
     }
@@ -65,7 +65,7 @@ int main()
         cin >> choice;
         switch (choice) 
         {
-            case 1:
+            case 1: 
                 // Insert a value at the first position
                 cout << "Enter value to insert at first position: ";
                 cin >> value;
@@ -141,3 +141,4 @@ int main()
     }
     return 0;
 }
+
