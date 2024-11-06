@@ -42,7 +42,8 @@ void InsertAtEnd(Node* &head, int data)
     }
     temp->next = newNode;
 }
-void InsertAtPosition(Node*& head, int data, int position) {
+void InsertAtPosition(Node* &head, int data, int position) 
+{
     if (position == 0) 
     {
         InsertAtBeginning(head, data);

@@ -15,7 +15,8 @@ public:
     }
 };
  
-class BST {
+class BST 
+{
 private:
     Node* root;
  

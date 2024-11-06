@@ -1,4 +1,4 @@
-// Question : Stack using Linked List
+// 5.1 Question : Stack using Linked List
 #include <iostream> 
 using namespace std;  
 class Node  
