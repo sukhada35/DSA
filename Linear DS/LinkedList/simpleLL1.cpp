@@ -1,12 +1,14 @@
-//Question: Create a simple linked list structure and write code to display its elements.
+//Ex 5.1 - Question: Create a simple linked list structure and write code to display its elements.
 #include <iostream>
 using namespace std;
-class Node{
+class Node
+{
     public:
     int data;
     Node* next;
 
-    Node(int data){
+    Node(int data)
+    {
         this->data = data;
         this->next = NULL;
     }

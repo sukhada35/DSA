@@ -1,5 +1,4 @@
 // Write a C/C++ program to implement DFS traversals (All three) on binary tree
-
 #include <iostream>
 using namespace std;
 class Node {
@@ -65,7 +64,8 @@ public:
 };
  
 // Function to create a sample tree
-Node* createSampleTree() {
+Node* createSampleTree() 
+{
     Node* root = new Node(5);
     root->left = new Node(3);
     root->right = new Node(7);
