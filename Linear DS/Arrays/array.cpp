@@ -1,4 +1,4 @@
-//In this code we are going to implement a menu-driven program to insert and delete elements from an array. The program will provide the following options to the user:
+//1. In this code we are going to implement a menu-driven program to insert and delete elements from an array. The program will provide the following options to the user:
 #include <iostream>
 using namespace std;
 // Function to print all elements of the array
