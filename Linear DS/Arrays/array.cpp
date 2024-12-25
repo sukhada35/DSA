@@ -139,6 +139,6 @@ int main()
         cout << "Current grades: ";
         printArray(arr, size);
     }
-    return 0;
+    return 0;   
 }
 
