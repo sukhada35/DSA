@@ -1,4 +1,4 @@
-# DSA Practice Repository
+# DSA Practice Repository.
 
 ## Introduction
 This repository contains my practice code for Data Structures and Algorithms (DSA) in C++. I will be solving problems daily, covering various topics such as arrays, linked lists, stacks, queues, trees, graphs, and more. This repository is intended to track my progress and serve as a resource for anyone interested in DSA in C++.
